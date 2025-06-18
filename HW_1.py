@@ -58,15 +58,15 @@ if __name__ == "__main__":
     res = find_min_coins(target_sum, banknotes)
     print(res)
 
-    # setup = f"from __main__ import find_coins_greedy, find_min_coins, target_sum, banknotes"
+    setup = f"from __main__ import find_coins_greedy, find_min_coins, target_sum, banknotes"
 
-    # t_find_coins_greedy = timeit.timeit("find_coins_greedy(target_sum, banknotes.copy())"
-    #                                     , setup=setup
-    #                                     , number=1)
+    t_find_coins_greedy = timeit.timeit("find_coins_greedy(target_sum, banknotes.copy())"
+                                        , setup=setup
+                                        , number=1)
     
-    # t_find_min_coins = timeit.timeit("find_min_coins(target_sum, banknotes.copy())"
-    #                                  , setup=setup
-    #                                  , number=1)
+    t_find_min_coins = timeit.timeit("find_min_coins(target_sum, banknotes.copy())"
+                                     , setup=setup
+                                     , number=1)
 
-    # print(f"Time for greedy algorithm: {t_find_coins_greedy:.6f} seconds")
-    # print(f"Time for dynamic programming algorithm: {t_find_min_coins:.6f} seconds")
+    print(f"Time for greedy algorithm: {t_find_coins_greedy:.6f} seconds")
+    print(f"Time for dynamic programming algorithm: {t_find_min_coins:.6f} seconds")
